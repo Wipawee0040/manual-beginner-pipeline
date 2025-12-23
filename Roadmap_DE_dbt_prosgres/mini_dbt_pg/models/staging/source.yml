@@ -1,0 +1,23 @@
+version: 2
+sources:
+  - name: raw
+    database: postgres
+    schema: public
+    tables:
+      - name: raw_order_items_dataset
+        columns:
+          - name: order_id
+            description: "Order identifier"
+          - name: order_item_id
+            description: "Item sequence within order"
+          - name: product_id
+            description: "Product identifier"
+          - name: seller_id
+            description: "Seller identifier"
+          - name: shipping_limit_date
+            description: "Shipping limit datetime (string in raw)"
+          - name: price
+            description: "Item price"
+          - name: freight_value
+            description: "Shipping cost"
+

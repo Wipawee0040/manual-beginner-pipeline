@@ -1,0 +1,12 @@
+version: 2
+models:
+  - name: fact_order_items
+    description: "Fact table containing order items details."
+    columns:
+      - name: order_item_id
+        tests:
+          - not_null
+      - name: order_id
+        tests:
+          - not_null
+        
