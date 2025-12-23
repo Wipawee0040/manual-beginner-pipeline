@@ -1,0 +1,5 @@
+apache-airflow
+dbt-postgres
+pandas
+psycopg2-binary
+numpy
